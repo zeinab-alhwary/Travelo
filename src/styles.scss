@@ -3,6 +3,15 @@ $wight-color:#FFFFFF;
 $gray-color:#adadad;
 $orang-color:#fb8500;
 $orang-light-color:#FB9A00;
+
+@mixin respond($breakpoint) {
+  @if($breakpoint == medium)  {
+    @media (max-width: 700px) { @content }
+  }
+  @if($breakpoint == small)  {
+    @media (max-width: 400px) { @content }
+  }
+}
 @mixin font($fontWeight,$fontSize){
   font-family: "Inter","Poppins",serif;
   font-weight:$fontWeight;

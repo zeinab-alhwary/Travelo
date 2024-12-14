@@ -7,7 +7,11 @@
   padding: 10px 20px;
   color:$wight-color;
 @include font($fontWeight:500,$fontSize:16px);
+    @include respond(small){
+     padding: 5px 10px;
+@include font($fontWeight:500,$fontSize:11px);
 
+    }
   &:hover{
     background: transparent linear-gradient(289deg, #FF6700 0% , #FB9A00 100%) 0% 0% no-repeat padding-box;
     cursor: pointer;
