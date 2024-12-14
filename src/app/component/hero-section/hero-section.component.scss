@@ -1,0 +1,96 @@
+@import "../../../styles.scss";
+
+.hero-container {
+  background-image: url("../../../assets/images/bg-hero-section.png");
+   background-size: cover;
+   background-repeat:no-repeat;
+   height: 100vh;
+   padding: 25px 50px;
+.navbar{
+
+  padding-inline: 90px 0;
+  .container-fluid {
+    padding-inline: 0;
+    @include font($fontWeight: 500, $fontSize: 20px);
+
+    .logo{
+      @include font($fontWeight: 500, $fontSize: 20px);
+    }
+    .navbar-toggler{
+      color:$orang-light-color;
+      background-color:$wight-color;
+    }
+   .navbar-nav {
+    margin-inline-start: auto;
+      .nav-item {
+        margin-inline-end: 30px;
+           .nav-link{
+            color:$gray-color;
+            border-bottom-color:$orang-light-color ;
+            transition: border-bottom-color 1s;
+            transition-timing-function: linear;
+            // &:hover:not(.active){
+            //   color: $wight-color;
+            //   border-bottom:2px solid $wight-color;
+            //  }
+             &:hover{
+              color: $wight-color;
+              border-bottom:2px solid $wight-color;
+             }
+           }
+           .active{
+              border-bottom:2px solid $wight-color;
+              color: $wight-color;
+           }
+      }
+    }
+  }
+  }
+  .hero-text-container {
+    padding-inline: 90px 0;
+    margin-block-start: 150px;
+    .note {
+      color:$orang-color;
+      letter-spacing: 0px;
+      @include font($fontWeight: 400, $fontSize: 20px);
+      margin-bottom: 5px;
+    }
+    .title {
+      color: #ffffff;
+      @include font($fontWeight: 700, $fontSize: 60px);
+      margin-top: 0;
+
+      .adventure{
+        position: relative;
+      }
+      .adventure::after{
+         content:'';
+         background-image:url('../../../assets/images/design-under-word-hero-section.svg');
+    position: absolute;
+    inset-block-end: -33px;
+  inset-inline-start: 150px;
+    transform: translate(-50%, -50%);
+    width: 85%;
+    height: 24px;
+    background-size: contain;
+    background-repeat: no-repeat
+      }
+    }
+    .btn-under-text{
+      margin-block-start: 50px;
+    }
+  }
+}
+@media only screen and (max-width: 800px) {
+  .hero-container {
+    height: 100%;
+    background-size: cover;
+    .navbar{
+      padding: 0;
+    }
+    .hero-text-container{
+      padding: 0;
+    text-align: center;
+    }
+  }
+}

@@ -1,1 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
+$wight-color:#FFFFFF;
+$gray-color:#adadad;
+$orang-color:#fb8500;
+$orang-light-color:#FB9A00;
+@mixin font($fontWeight,$fontSize){
+  font-family: "Inter","Poppins",serif;
+  font-weight:$fontWeight;
+  font-size: $fontSize;
+
+}
+body{
+  margin: 0;
+
+}
