@@ -4,7 +4,7 @@
   background-image: url("../../../assets/images/bg-hero-section.png");
   background-size: cover;
   background-repeat: no-repeat;
-  height: 100vh;
+  height: 800px;
   padding: 25px 50px;
   @include respond(medium) {
     height: 65vh;
@@ -63,7 +63,7 @@
   }
   .hero-text-container {
     padding-inline: 90px 0;
-    margin-block-start: 150px;
+    margin-block-start: 155px;
     @include respond(medium) {
       padding: 0;
       margin-block-start: 90px;
@@ -115,7 +115,10 @@
       }
     }
     .btn-under-text {
-      margin-block-start: 50px;
+      margin-block-start: 80px;
+      @include respond(medium) {
+        margin-block-start: 20px;
+      }
       @include respond(small) {
         margin-block-start: 18px;
       }
