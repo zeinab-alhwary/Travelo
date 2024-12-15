@@ -2,123 +2,123 @@
 
 .hero-container {
   background-image: url("../../../assets/images/bg-hero-section.png");
-   background-size: cover;
-   background-repeat:no-repeat;
-   height: 100vh;
-   padding: 25px 50px;
-   @include respond(medium){
-    height: 100%;
-    background-size: cover;
-   }
-   @include respond(small){
-    padding: 10px 20px;
-    height: 100vh;
-    background-size: cover;
-   }
-.navbar{
-  padding-inline: 90px 0;
-  @include respond(medium ){
-    padding: 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  padding: 25px 50px;
+  @include respond(medium) {
+    height: 65vh;
+
   }
-  .container-fluid {
-    padding-inline: 0;
-    @include font($fontWeight: 500, $fontSize: 20px);
-    @include respond(small){
+  @include respond(small) {
+    padding: 10px 20px;
+    height: 40vh;
 
-    @include font($fontWeight: 500, $fontSize: 13px);
-
+  }
+  .navbar {
+    padding-inline: 90px 0;
+    @include respond(medium) {
+      padding: 0;
     }
-
-    .logo{
-      // @include font($fontWeight: 500, $fontSize: 20px);
-      @include respond(small){
-        width: 80px;
+    .container-fluid {
+      padding-inline: 0;
+      @include font($fontWeight: 500, $fontSize: 20px);
+      @include respond(small) {
+      @include font($fontWeight: 500, $fontSize: 13px);
       }
-    }
-    .navbar-toggler{
-      color:$orang-light-color;
-      background-color:$wight-color;
-    }
-   .navbar-nav {
-    margin-inline-start: auto;
-      .nav-item {
-        margin-inline-end: 30px;
-           .nav-link{
-            color:$gray-color;
-            border-bottom-color:$orang-light-color ;
+
+      .logo {
+        @include respond(small) {
+          width: 80px;
+        }
+      }
+      .navbar-toggler {
+        color: $orang-light-color;
+        background-color: $wight-color;
+      }
+      .navbar-nav {
+        margin-inline-start: auto;
+        .nav-item {
+          margin-inline-end: 30px;
+          .nav-link {
+            color: $gray-color;
+            border-bottom-color: $orang-light-color;
             transition: border-bottom-color 1s;
             transition-timing-function: linear;
-            // &:hover:not(.active){
-            //   color: $wight-color;
-            //   border-bottom:2px solid $wight-color;
-            //  }
-             &:hover{
+            @include font(400, 20px);
+
+            &:hover {
               color: $wight-color;
-              border-bottom:2px solid $wight-color;
-             }
-           }
-           .active{
-              border-bottom:2px solid $wight-color;
-              color: $wight-color;
-           }
+              border-bottom: 2px solid $wight-color;
+            }
+          }
+          .active {
+            border-bottom: 2px solid $wight-color;
+            color: $wight-color;
+            @include font(500, 20px);
+          }
+        }
       }
     }
-  }
   }
   .hero-text-container {
     padding-inline: 90px 0;
     margin-block-start: 150px;
-    @include respond(medium){
+    @include respond(medium) {
       padding: 0;
-    text-align: center;
+      margin-block-start: 90px;
+      text-align: center;
     }
-    // @include respond(small){
-    //   margin-block-start: 100px;
-    // }
-    .hero-item-note{
-      color:$orang-color;
+    @include respond(small) {
+      margin-block-start: 40px;
+    }
+    .hero-item-note {
+      color: $orang-color;
       letter-spacing: 0px;
       @include font($fontWeight: 400, $fontSize: 20px);
       margin-block-end: 5px;
-      @include respond(small){
-      @include font($fontWeight: 400, $fontSize: 13px);
-
+      @include respond(small) {
+        @include font($fontWeight: 400, $fontSize: 13px);
       }
     }
-    .hero-item-title{
-      color: #ffffff;
+    .hero-item-title {
+      color: $wight-color;
       @include font($fontWeight: 700, $fontSize: 60px);
+      line-height: 1.25;
       margin-top: 0;
-      @include respond(small){
-      @include font($fontWeight: 700, $fontSize: 30px);
-
+      @include respond(medium) {
+        @include font($fontWeight: 700, $fontSize: 40px);
       }
 
-      .adventure{
+      @include respond(small) {
+        @include font($fontWeight: 700, $fontSize: 20px);
+      }
+
+      .adventure {
         position: relative;
+        &::after {
+          content: "";
+          background-image: url("../../../assets/images/design-under-word-hero-section.svg");
+          position: absolute;
+          inset-block-end: -33px;
+          inset-inline-start: 150px;
+          transform: translate(-50%, -50%);
+          width: 85%;
+          height: 24px;
+          background-size: contain;
+          background-repeat: no-repeat;
+          @include respond(small) {
+            inset-block-end: -33px;
+            inset-inline-start: 52px;
+          }
+        }
       }
-      .adventure::after{
-         content:'';
-         background-image:url('../../../assets/images/design-under-word-hero-section.svg');
-    position: absolute;
-    inset-block-end: -33px;
-  inset-inline-start: 150px;
-    transform: translate(-50%, -50%);
-    width: 85%;
-    height: 24px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    @include respond(small)
-    {
-      inset-block-end: -33px;
-      inset-inline-start: 78px;
     }
-      }
-    }
-    .btn-under-text{
+    .btn-under-text {
       margin-block-start: 50px;
+      @include respond(small) {
+        margin-block-start: 18px;
+      }
     }
   }
 }
-
-

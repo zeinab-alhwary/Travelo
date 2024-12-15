@@ -9,7 +9,7 @@ $orang-light-color:#FB9A00;
     @media (max-width: 700px) { @content }
   }
   @if($breakpoint == small)  {
-    @media (max-width: 400px) { @content }
+    @media (max-width: 500px) { @content }
   }
 }
 @mixin font($fontWeight,$fontSize){

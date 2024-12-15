@@ -1,10 +1,10 @@
 @import '../../../styles.scss';
 .btn-plan-trip{
-  background: transparent linear-gradient(289deg, #FB9A00 0%, #FF6700 100%) 0% 0% no-repeat padding-box;
+  background: transparent linear-gradient(289deg, $orang-light-color 0%,$orang-color 100%) 0% 0% no-repeat padding-box;
   border-radius: 20px;
   opacity: 1;
   border: none;
-  padding: 10px 20px;
+  padding: 8px 24px;
   color:$wight-color;
 @include font($fontWeight:500,$fontSize:16px);
     @include respond(small){
@@ -13,7 +13,7 @@
 
     }
   &:hover{
-    background: transparent linear-gradient(289deg, #FF6700 0% , #FB9A00 100%) 0% 0% no-repeat padding-box;
+    background: transparent linear-gradient(289deg, $orang-color 0% , $orang-light-color 100%) 0% 0% no-repeat padding-box;
     cursor: pointer;
   }
 }
