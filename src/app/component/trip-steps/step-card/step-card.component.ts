@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-step-card',
@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./step-card.component.scss']
 })
 export class StepCardComponent {
-
+ @Input() public contentCards:any;
 }

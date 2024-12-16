@@ -1,12 +1,18 @@
-<div class="card-child-container">
-  <div class="card-text-container counter">
-    <h3 class="card-title">Plan your travel budget <br> never more easy!</h3>
-     <p class="card-text">Budget is an important factor that helps you to choose where to travel.<br> Now we Made it easier for people to plan their vacations with a limited budget by suggesting places like hotels and restaurants that suit everyone budget.</p>
-<div class="card-link">
-  <a href="#" class="start-link">Start now</a>
-  <span class="arrow"> > </span>
-  </div>
-  </div>
+<div class="counter">
+  <ng-container *ngFor="let card of contentCards ; let i=index">
+    <div class="card-child-container "  [class.reverse]="i === 1" >
+      <!-- -->
+      <div class="card-text-container">
+        <h3 class="card-title">{{card.title}}</h3>
+         <p class="card-text">{{card.text}}</p>
+    <div class="card-link">
+      <a href="#" class="start-link">Start now</a>
+      <span class="arrow"> > </span>
+      </div>
+    </div>
+      <img class="card-image" src={{card.image}} alt="image">
+    </div>
 
-  <img class="card-image" src="../../../../assets/images/first-card-image.png" alt="image">
+  </ng-container>
+  
 </div>

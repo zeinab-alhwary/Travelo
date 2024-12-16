@@ -9,7 +9,7 @@ $orang-dark-color: #FF6700;
 
 @mixin respond($breakpoint) {
   @if($breakpoint == medium)  {
-    @media (max-width: 700px) { @content }
+    @media (max-width: 1100px) { @content }
   }
   @if($breakpoint == small)  {
     @media (max-width: 500px) { @content }
