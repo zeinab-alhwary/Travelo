@@ -83,7 +83,7 @@
     }
     .hero-item-title {
       color: $wight-color;
-      @include font($fontWeight: 700, $fontSize: 60px);
+      @include font($fontWeight: 700, $fontSize: 70px);
       line-height: 1.25;
       margin-top: 0;
       @include respond(medium) {

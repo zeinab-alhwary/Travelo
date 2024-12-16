@@ -1,0 +1,114 @@
+@import '../../../../styles.scss';
+
+.card-child-container{
+  display: flex;
+  margin-inline: 200px;
+  gap:100px;
+
+  margin-block: 200px;
+  .card-text-container{
+    counter-reset: my-number;
+
+    position: relative;
+    &::before{
+      content: "0"counter(my-number);
+      counter-increment: my-number;
+      color: rgba($color: $orang-color, $alpha: 20%);
+      @include font(bold,150px);
+      position: absolute;
+      bottom: 240px;
+      left: -70px;
+    }
+    .card-title{
+      @include font(500,35px);
+      color:$wight-color;
+      line-height: 45px;
+    }
+    .card-text{
+      @include font(400,16px);
+      color:$gray-light-color;
+      margin-block-start: 20px;
+    }
+
+.card-link{
+  @include font(400,20px);
+  color:$orang-color ;
+  .start-link{
+    color:$orang-color ;
+    margin-inline-end: 10px;
+    &:hover{
+      color: darken($color: $orang-color, $amount: 25%);
+    }
+  }
+
+}
+
+  }
+  .card-image{
+    width: 330px;
+    height: 400px;
+    margin-block-start: -65px;
+    position:relative ;
+    &::before{
+      content:'';
+      background-image: url(../../../../assets/images/circle-glass.png);
+      position: absolute;
+      top:20px;
+      right: 10px;
+    }
+
+  }
+}
+@include respond(medium){
+  .card-child-container{
+
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+     margin-inline: 0;
+      gap: 30px;
+
+  .card-text-container{
+    &::before{
+      @include font(bold,100px);
+
+      bottom: 93px;
+      left: 66px;
+    }
+        .card-title{
+          @include font(500,25px);
+          line-height: 30px;
+        }
+        .card-text{
+          @include font(400,13px);
+        }
+
+        .card-link{
+          @include font(400,15px);
+        }
+
+  }
+  .card-image{
+    width: 250px;
+    height: 300px;
+  }
+}
+}
+@include respond(small){
+  .card-child-container{
+    .card-text-container{
+      &::before{
+        bottom:81px;
+        left: 10px;
+      }
+          .card-title{
+            @include font(500,20px);
+            line-height: 20px;
+          }
+          .card-text{
+            @include font(400,11px);
+          }
+
+    }
+  }
+}

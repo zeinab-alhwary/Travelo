@@ -2,11 +2,12 @@
 .trip-steps-container
 {
   padding-block-start: 25px;
-  text-align: center;
+
   background-color: $dark-color;
   .info-trip-steps{
+    text-align: center;
     .title-trip-steps{
-      @include font(600,35px);
+      @include font(700,40px);
       background: linear-gradient(275deg, $orang-light-color 0%, $orang-dark-color 100%);
        -webkit-background-clip: text;
        -webkit-text-fill-color: transparent;
@@ -27,21 +28,21 @@
 @include respond(medium)
 {
   .trip-steps-container{
+    padding-inline: 30px;
     .info-trip-steps{
-      padding-inline: 30px;
       .title-trip-steps{
       @include font(500,25px);
 
       }
       .description-trip-steps{
         @include font(400,15px);
-        padding-inline: 30px;
       }
     }
   }
 }
 @include respond(small){
   .trip-steps-container{
+    padding-inline: 30px;
     .info-trip-steps{
       .title-trip-steps{
       @include font(500,20px);
