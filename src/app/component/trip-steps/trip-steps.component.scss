@@ -1,0 +1,57 @@
+@import '../../../styles.scss';
+.trip-steps-container
+{
+  padding-block-start: 25px;
+
+  background-color: $dark-color;
+  .info-trip-steps{
+    text-align: center;
+    .title-trip-steps{
+      @include font(700,40px);
+      background: linear-gradient(275deg, $orang-light-color 0%, $orang-dark-color 100%);
+       -webkit-background-clip: text;
+       -webkit-text-fill-color: transparent;
+       text-fill-color: transparent;
+       line-height: 2;
+
+
+    }
+    .description-trip-steps{
+      @include font(400,18px);
+      color: $gray-light-color;
+      line-height: 1.3;
+      padding-inline: 100px;
+
+    }
+  }
+}
+@include respond(medium)
+{
+  .trip-steps-container{
+    padding-inline: 30px;
+    .info-trip-steps{
+      .title-trip-steps{
+      @include font(500,25px);
+
+      }
+      .description-trip-steps{
+        @include font(400,15px);
+      }
+    }
+  }
+}
+@include respond(small){
+  .trip-steps-container{
+    padding-inline: 30px;
+    .info-trip-steps{
+      .title-trip-steps{
+      @include font(500,20px);
+
+      }
+      .description-trip-steps{
+        @include font(400,13px);
+      }
+
+    }
+  }
+}

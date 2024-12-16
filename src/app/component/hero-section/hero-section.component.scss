@@ -4,7 +4,7 @@
   background-image: url("../../../assets/images/bg-hero-section.png");
   background-size: cover;
   background-repeat: no-repeat;
-  height: 100vh;
+  height: 800px;
   padding: 25px 50px;
   @include respond(medium) {
     height: 65vh;
@@ -63,7 +63,7 @@
   }
   .hero-text-container {
     padding-inline: 90px 0;
-    margin-block-start: 150px;
+    margin-block-start: 155px;
     @include respond(medium) {
       padding: 0;
       margin-block-start: 90px;
@@ -83,7 +83,7 @@
     }
     .hero-item-title {
       color: $wight-color;
-      @include font($fontWeight: 700, $fontSize: 60px);
+      @include font($fontWeight: 700, $fontSize: 70px);
       line-height: 1.25;
       margin-top: 0;
       @include respond(medium) {
@@ -100,8 +100,8 @@
           content: "";
           background-image: url("../../../assets/images/design-under-word-hero-section.svg");
           position: absolute;
-          inset-block-end: -33px;
-          inset-inline-start: 150px;
+          inset-block-end: -31px;
+          inset-inline-start: 177px;
           transform: translate(-50%, -50%);
           width: 85%;
           height: 24px;
@@ -115,7 +115,10 @@
       }
     }
     .btn-under-text {
-      margin-block-start: 50px;
+      margin-block-start: 80px;
+      @include respond(medium) {
+        margin-block-start: 20px;
+      }
       @include respond(small) {
         margin-block-start: 18px;
       }

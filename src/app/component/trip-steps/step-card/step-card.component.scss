@@ -1,0 +1,99 @@
+@import '../../../../styles.scss';
+
+.counter{
+  counter-reset: my-number;
+
+}
+.card-child-container{
+  display: flex;
+  margin-inline: 200px;
+   gap:100px;
+   margin-block: 200px;
+  align-items: center;
+  &.reverse{
+    flex-direction: row-reverse;
+  }
+  .card-text-container{
+    position: relative;
+    &::before{
+      content: "0"counter(my-number);
+      counter-increment: my-number;
+      color: rgba($color: $orang-color, $alpha: 20%);
+      @include font(bold,150px);
+
+      position: absolute;
+      inset-block-end: 159px;
+      inset-inline-start: -70px;
+    }
+    .card-title{
+      @include font(500,35px);
+      color:$wight-color;
+      line-height: 45px;
+    }
+    .card-text{
+      @include font(400,16px);
+      color:$gray-light-color;
+      margin-block-start: 25px;
+    }
+
+.card-link{
+  @include font(400,20px);
+  color:$orang-color ;
+  .start-link{
+    color:$orang-color ;
+    margin-inline-end: 10px;
+    &:hover{
+      color: darken($color: $orang-color, $amount: 25%);
+    }
+  }
+
+}
+
+  }
+   
+}
+@include respond(medium){
+  .card-child-container{
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+    margin-inline: 0;
+    gap: 30px;
+    margin-block: 100px;
+  &.reverse{
+    flex-direction: column-reverse;
+  }
+  .card-text-container{
+    &::before{
+      display: none;
+    }
+        .card-title{
+          @include font(500,25px);
+          line-height: 30px;
+        }
+        .card-text{
+          @include font(400,13px);
+        }
+
+        .card-link{
+          @include font(400,15px);
+        }
+
+  }
+ 
+}
+}
+@include respond(small){
+  .card-child-container{
+    .card-text-container{
+          .card-title{
+            @include font(500,20px);
+            line-height: 20px;
+          }
+          .card-text{
+            @include font(400,11px);
+          }
+
+    }
+  }
+}

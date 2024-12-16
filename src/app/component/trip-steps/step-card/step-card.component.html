@@ -1,0 +1,18 @@
+<div class="counter">
+  <ng-container *ngFor="let card of contentCards ; let i=index">
+    <div class="card-child-container "  [class.reverse]="i === 1" >
+      <!-- -->
+      <div class="card-text-container">
+        <h3 class="card-title">{{card.title}}</h3>
+         <p class="card-text">{{card.text}}</p>
+    <div class="card-link">
+      <a href="#" class="start-link">Start now</a>
+      <span class="arrow"> > </span>
+      </div>
+    </div>
+      <img class="card-image" src={{card.image}} alt="image">
+    </div>
+
+  </ng-container>
+  
+</div>
