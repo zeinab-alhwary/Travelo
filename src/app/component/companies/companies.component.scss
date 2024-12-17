@@ -18,9 +18,8 @@ span{
   overflow-y: hidden;
   padding-block: 30px;
   padding-inline: 150px;
-  .logo{
-    padding-inline-end: 100px;
-  }
+  gap:100px;
+
 }
 }
 @include respond(medium)
@@ -31,6 +30,10 @@ span{
   }
   span{
     @include font(600,20px)
+   }
+   .companies-logo{
+    padding-inline: 80px;
+    gap:50px;
    }
 }
 }
