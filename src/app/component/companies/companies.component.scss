@@ -1,0 +1,36 @@
+@import '../../../styles.scss';
+.companies-container{
+  background-color: $black-color;
+  text-align: center;
+  padding-block-start: 20px;
+  
+
+  .header-text{
+color: $wight-color;
+@include font(400,20px);
+}
+span{
+ @include font(600,25px)
+}
+.companies-logo{
+  display: flex;
+  overflow: scroll;
+  overflow-y: hidden;
+  padding-block: 30px;
+  padding-inline: 150px;
+  .logo{
+    padding-inline-end: 100px;
+  }
+}
+}
+@include respond(medium)
+{
+.companies-container{
+  .header-text{
+    @include font(400,15px);
+  }
+  span{
+    @include font(600,20px)
+   }
+}
+}

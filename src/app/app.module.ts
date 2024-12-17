@@ -7,6 +7,7 @@ import { HeroSectionComponent } from './component/hero-section/hero-section.comp
 import { PlanButtonComponent } from './component/plan-button/plan-button.component';
 import { TripStepsComponent } from './component/trip-steps/trip-steps.component';
 import { StepCardComponent } from './component/trip-steps/step-card/step-card.component';
+import { CompaniesComponent } from './component/companies/companies.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { StepCardComponent } from './component/trip-steps/step-card/step-card.co
     HeroSectionComponent,
     PlanButtonComponent,
     TripStepsComponent,
-    StepCardComponent
+    StepCardComponent,
+    CompaniesComponent
   ],
   imports: [
     BrowserModule,

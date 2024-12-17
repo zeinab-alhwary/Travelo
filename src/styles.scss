@@ -6,6 +6,7 @@ $orang-light-color:#FB9A00;
 $dark-color:#1B263B;
 $gray-light-color:#CECECE;
 $orang-dark-color: #FF6700;
+$black-color:#000000;
 
 @mixin respond($breakpoint) {
   @if($breakpoint == medium)  {
