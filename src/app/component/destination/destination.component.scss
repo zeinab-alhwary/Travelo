@@ -3,6 +3,7 @@
 .destination-container
 {
   padding: 100px;
+  
   .dest-text-container{
       line-height: 5px;
     .dest-item-note{
@@ -50,6 +51,56 @@
     }
 
   }
+  .rate-cards-container{
+    margin-block: 90px;
+    display: flex;
+    gap: 20px;
+    overflow: hidden;
+   
+  .card-container{
+    background-color: rgba($color: $black-color, $alpha: 30%);
+    transition: transform 2s;
+    max-width:310px;
+    padding: 20px;
+    border-radius: 20px;
+    .card-image{
+      position: relative;
+      &::after{
+        content: '';
+        background-image: url('../../../assets/images/like-image.svg');
+        opacity: 1;
+        position:absolute;
+      inset-block-end: 254px;
+      inset-inline-start: 212px;
+        width: 40px;
+        height: 40px;
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
+    }
+    .card-header{
+      display: flex;
+      justify-content: space-between;
+      margin-block-start: 20px;
+      .card-header-title{
+        @include font(500,18px);
+        color:$wight-color;
+      }
+
+    }
+    .card-text{
+      @include font(400,14px);
+      color:$gray-color;
+      line-height: 20px;
+      margin-block-start: 20px;
+
+    }
+    &:hover{
+      transform: scale(0.9)
+    }
+  }
+
+}
 }
 @include respond(medium){
   .destination-container{
@@ -75,6 +126,9 @@
     .dest-item-info{
       @include font(400,15px);
     }
+  }
+  .card-container{
+  max-width: 250px;
   }
 }
 }
