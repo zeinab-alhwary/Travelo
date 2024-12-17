@@ -12,7 +12,19 @@
     .dest-item-title{
       @include font(700,40px);
       color:$wight-color;
+      position: relative;
+           &::after{
+            content: "";
+            background-image: url("../../../assets/images/plane.svg");
+            position: absolute;
+            inset-block-end: -252px;
+            inset-inline-start: 494px;
+            width: 200px;
+            height: 300px;
+            background-size: contain;
+            background-repeat: no-repeat;
 
+           }
       .word-underline{
           position: relative;
           &::after {
@@ -51,6 +63,14 @@
     .dest-item-title{
       @include font(700,30px);
       color:$wight-color;
+      &::after{
+        display: none;
+      }
+      .word-underline{
+        &::after{
+          inset-inline-start: 27px;
+        }
+      }
     }
     .dest-item-info{
       @include font(400,15px);
