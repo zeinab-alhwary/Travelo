@@ -1,11 +1,11 @@
 @import '../../../styles.scss';
 .companies-container{
-  background-color: $black-color;
+  background-color:rgba($color:$black-color , $alpha: 20%) ;
   text-align: center;
   padding-block-start: 20px;
-  
 
-  .header-text{
+
+.header-text{
 color: $wight-color;
 @include font(400,20px);
 }
