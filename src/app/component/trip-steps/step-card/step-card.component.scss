@@ -57,7 +57,7 @@
     flex-direction: column-reverse;
     align-items: center;
     text-align: center;
-    margin-inline: 0;
+    margin-inline:100px;
     gap: 30px;
     margin-block: 100px;
   &.reverse{
@@ -80,11 +80,15 @@
         }
 
   }
- 
+ .card-image{
+  width: 300px;
+   height: 310px;
+ }
 }
 }
 @include respond(small){
   .card-child-container{
+    margin-inline:50px;
     .card-text-container{
           .card-title{
             @include font(500,20px);
@@ -95,5 +99,9 @@
           }
 
     }
+    .card-image{
+      width: 250px;
+       height: 260px;
+     }
   }
 }
