@@ -100,13 +100,16 @@
           content: "";
           background-image: url("../../../assets/images/design-under-word-hero-section.svg");
           position: absolute;
-          inset-block-end: -31px;
-          inset-inline-start: 177px;
-          transform: translate(-50%, -50%);
-          width: 85%;
+          inset-block-end: -20px;
+          inset-inline-start: 15px;
+          width: 100%;
           height: 24px;
           background-size: contain;
           background-repeat: no-repeat;
+          @include respond(medium){
+            inset-block-end: -21px;
+            inset-inline-start: 0;
+          }
           @include respond(small) {
             inset-block-end: -33px;
             inset-inline-start: 52px;
