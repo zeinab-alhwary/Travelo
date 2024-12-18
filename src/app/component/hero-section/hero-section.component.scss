@@ -34,7 +34,7 @@
       }
       .navbar-toggler {
         color: $orang-light-color;
-        background-color: $wight-color;
+        background-color: $white-color;
       }
       .navbar-nav {
         margin-inline-start: auto;
@@ -48,13 +48,13 @@
             @include font(400, 20px);
 
             &:hover {
-              color: $wight-color;
-              border-bottom: 2px solid $wight-color;
+              color: $white-color;
+              border-bottom: 2px solid $white-color;
             }
           }
           .active {
-            border-bottom: 2px solid $wight-color;
-            color: $wight-color;
+            border-bottom: 2px solid $white-color;
+            color: $white-color;
             @include font(500, 20px);
           }
         }
@@ -82,7 +82,7 @@
       }
     }
     .hero-item-title {
-      color: $wight-color;
+      color: $white-color;
       @include font($fontWeight: 700, $fontSize: 70px);
       line-height: 1.25;
       margin-top: 0;

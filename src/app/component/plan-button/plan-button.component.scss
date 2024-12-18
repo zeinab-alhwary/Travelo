@@ -5,7 +5,7 @@
   opacity: 1;
   border: none;
   padding: 8px 24px;
-  color:$wight-color;
+  color:$white-color;
 @include font($fontWeight:500,$fontSize:16px);
     @include respond(small){
      padding: 5px 10px;
