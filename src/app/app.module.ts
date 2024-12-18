@@ -8,6 +8,7 @@ import { PlanButtonComponent } from './component/plan-button/plan-button.compone
 import { TripStepsComponent } from './component/trip-steps/trip-steps.component';
 import { StepCardComponent } from './component/trip-steps/step-card/step-card.component';
 import { CompaniesComponent } from './component/companies/companies.component';
+import { DestinationComponent } from './component/destination/destination.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { CompaniesComponent } from './component/companies/companies.component';
     PlanButtonComponent,
     TripStepsComponent,
     StepCardComponent,
-    CompaniesComponent
+    CompaniesComponent,
+    DestinationComponent
   ],
   imports: [
     BrowserModule,

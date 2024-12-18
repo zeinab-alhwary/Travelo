@@ -1,0 +1,22 @@
+<section class="destination-container">
+  <div class="dest-text-container">
+    <p class="dest-item-note">Destinations</p>
+    <h4 class="dest-item-title">Discover <span class="word-underline">Top</span> Attractions</h4>
+    <p class="dest-item-info">You can choose and customize your trip from the best <br> recommendations based in your own budget</p>
+  </div>
+  <div class="rate-cards-container" >
+    <ng-container *ngFor="let data of rateCards">
+    <div class="card-container">
+      <div class="card-image">
+        <img src="{{data.image}}" alt="place-image">
+      </div>
+       <div class="card-header">
+        <h4 class="card-header-title">{{data.head}}</h4>
+          <img src="../../../assets/images/stars-image.png" alt="stars"  class="stars">
+       </div>
+       <p class="card-text">{{data.description}}</p>
+      </div>
+    </ng-container>
+
+  </div>
+</section>
