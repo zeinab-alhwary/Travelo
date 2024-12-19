@@ -1,0 +1,14 @@
+@import '../../../styles.scss';
+footer{
+  background: transparent linear-gradient(180deg, $blue-dark-color 0%, $blue-color 100%) 0% 0% no-repeat padding-box;
+  height: 595px;
+  .logo-info{
+    .logo{
+
+    }
+    .info-under-logo{
+      color:$orang-color;
+      @include font(400,20px)
+    }
+  }
+}

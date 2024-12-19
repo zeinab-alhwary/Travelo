@@ -1,0 +1,12 @@
+@import '../../../../styles.scss';
+
+.list-container{
+  margin-inline-end: 50px;
+  ul{
+    list-style: none;
+    .title{
+      color:$white-color;
+      @include font(500,20px);
+    }
+  }
+}
