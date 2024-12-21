@@ -1,8 +1,10 @@
 <section class="list-container">
-  <ul>
-    <li class="title">About</li>
-    <li class="list-item">Services</li>
-    <li class="list-item">Help</li>
-    <li class="list-item">FAQ </li>
-  </ul>
+  <ng-container *ngFor="let ele of linkes">
+    <ul class="list">
+      <li class="title">{{ele.title}}</li>
+      <li class="list-item"><a href="#" class="linke-item">{{ele.eleOne}}</a></li>
+      <li class="list-item"><a href="#" class="linke-item">{{ele.eleTwo}}</a></li>
+      <li class="list-item"><a href="#" class="linke-item">{{ele.eleThree}}</a></li>
+    </ul>
+  </ng-container>
 </section>

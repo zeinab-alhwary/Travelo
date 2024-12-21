@@ -1,14 +1,85 @@
 @import '../../../styles.scss';
 footer{
-  background: transparent linear-gradient(180deg, $blue-dark-color 0%, $blue-color 100%) 0% 0% no-repeat padding-box;
-  height: 595px;
-  .logo-info{
-    .logo{
+  // background: transparent linear-gradient(180deg, $blue-dark-color 0%, $blue-color 100%) 0% 0% no-repeat padding-box;
+  padding-inline: 130px ;
+  padding-block: 100px 50px;
+  .top-section{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-block: 100px 30px;
+    .logo-info{
+      // margin-inline-end: 100px;
+      .logo{
+        width: 230px;
+      }
+      .info-under-logo{
+        color:$orang-color;
+        @include font(400,20px)
+      }
+    }
+    .all-column{
+    display: flex;
+      .contact-container{
+        margin-inline-start: 70px;
+       .end-culomn{
+          list-style: none;
+          border-inline-end: 20px;
+          .title{
+            color:$white-color;
+            @include font(500,20px);
+            margin-block-end: 25px;
+  
+          }
+          .email{
+            margin-block-end:16px;
+          }
+          .social-links{
+           .social-icon {
+            padding-inline-end: 27px;
+             }
+            
+           }
+            
+          }
+          .contact-item{
+            text-decoration-line: none;
+            color: $gray-light-color;
+            @include font(400,18px);
+            &:hover{
+              color: $orang-color;
+            }
+           
+          }
+        }
+      }
+    }
+  
+.footer-underline{ 
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid $white-color;
+  @include font(400,14px);
+  color:$gray-color;
+  
+}
+}
+@include respond(medium){
+  footer{
+    .top-section{
+      .logo-info{
+        margin-block-end: 30px;
+      }
+      flex-wrap: wrap;
+      justify-content: center;
+      text-align: center;
+      .all-column{
+        flex-wrap: wrap;
+       .contact-container{
+        margin-inline-start: 25px;
+       }
+      }
+    }
 
-    }
-    .info-under-logo{
-      color:$orang-color;
-      @include font(400,20px)
-    }
   }
 }

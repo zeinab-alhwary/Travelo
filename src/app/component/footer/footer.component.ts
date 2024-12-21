@@ -6,5 +6,16 @@ import { Component } from '@angular/core';
   styleUrls: ['./footer.component.scss']
 })
 export class FooterComponent {
-
+  currentDate: Date = new Date();
+linkesName=[{
+  title:'About',
+  eleOne:'Services',
+  eleTwo:'Help',
+  eleThree:'FAQ',
+},{
+  title:'Resources',
+  eleOne:'Blog',
+  eleTwo:'Newsletter',
+  eleThree:'Events',
+}]
 }
