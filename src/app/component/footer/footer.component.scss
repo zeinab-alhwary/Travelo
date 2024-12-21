@@ -12,10 +12,13 @@ footer{
       // margin-inline-end: 100px;
       .logo{
         width: 230px;
+        margin-block-end: 25px;
+        margin-inline-start: 20px;
       }
       .info-under-logo{
         color:$orang-color;
-        @include font(400,20px)
+        @include font(400,20px);
+        margin-block-start:-7px;
       }
     }
     .all-column{
@@ -69,6 +72,12 @@ footer{
     .top-section{
       .logo-info{
         margin-block-end: 30px;
+        .logo{
+          margin-block-end: 0;
+        }
+        .info-under-logo{
+          margin-block-start:10px;
+        }
       }
       flex-wrap: wrap;
       justify-content: center;
