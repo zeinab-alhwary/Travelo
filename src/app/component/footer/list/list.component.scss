@@ -22,7 +22,7 @@
       &:hover{
         color: $orang-color;
       }
-      
+
     }
   }
   }
@@ -30,5 +30,6 @@
 @include respond(medium){
   .list-container{
     gap:25px;
+    flex-wrap: wrap;
   }
 }
