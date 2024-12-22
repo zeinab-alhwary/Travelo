@@ -1,0 +1,35 @@
+@import '../../../../styles.scss';
+
+.list-container{
+
+  display:flex;
+   gap:70px;
+ .list{
+    list-style: none;
+    border-inline-end: 20px;
+    .title{
+      color:$white-color;
+      @include font(500,20px);
+      margin-block-end: 25px;
+
+    }
+  .list-item{
+    margin-block-end:16px;
+    .linke-item{
+      text-decoration-line: none;
+      color: $gray-light-color;
+      @include font(400,18px);
+      &:hover{
+        color: $orang-color;
+      }
+
+    }
+  }
+  }
+}
+@include respond(medium){
+  .list-container{
+    gap:25px;
+    flex-wrap: wrap;
+  }
+}

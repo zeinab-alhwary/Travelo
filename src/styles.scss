@@ -7,6 +7,9 @@ $dark-color:#1B263B;
 $gray-light-color:#CECECE;
 $orang-dark-color: #FF6700;
 $black-color:#000000;
+$gray-dark-color:#CECECE1A;
+$blue-dark-color:#06090F;
+$blue-color:#1B263BD8;
 
 @mixin respond($breakpoint) {
   @if($breakpoint == medium)  {
@@ -22,8 +25,13 @@ $black-color:#000000;
   font-size: $fontSize;
 
 }
+ul{
+  padding-inline-start: 0;
+  padding-left: 0;
+}
 body{
   margin: 0;
+
 }
 // scroll bar style
 

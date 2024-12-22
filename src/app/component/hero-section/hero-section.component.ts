@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { PlanButtonComponent } from '../plan-button/plan-button.component';
 @Component({
   selector: 'app-hero-section',
@@ -6,5 +6,5 @@ import { PlanButtonComponent } from '../plan-button/plan-button.component';
   styleUrls: ['./hero-section.component.scss']
 })
 export class HeroSectionComponent {
-
+  textButton='Plan a trip';
 }

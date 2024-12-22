@@ -9,6 +9,10 @@ import { TripStepsComponent } from './component/trip-steps/trip-steps.component'
 import { StepCardComponent } from './component/trip-steps/step-card/step-card.component';
 import { CompaniesComponent } from './component/companies/companies.component';
 import { DestinationComponent } from './component/destination/destination.component';
+import { FooterComponent } from './component/footer/footer.component';
+import { SubscribeComponent } from './component/subscribe/subscribe.component';
+import { ListComponent } from './component/footer/list/list.component';
+
 
 @NgModule({
   declarations: [
@@ -18,7 +22,10 @@ import { DestinationComponent } from './component/destination/destination.compon
     TripStepsComponent,
     StepCardComponent,
     CompaniesComponent,
-    DestinationComponent
+    DestinationComponent,
+    FooterComponent,
+    SubscribeComponent,
+    ListComponent
   ],
   imports: [
     BrowserModule,
