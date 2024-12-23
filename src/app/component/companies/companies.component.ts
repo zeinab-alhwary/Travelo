@@ -7,17 +7,17 @@ import { Component } from '@angular/core';
 })
 export class CompaniesComponent {
  companiesLogo=[
-    '../../../assets/images/companies-logo/CWT-logo1-white.png',
-    '../../../assets/images/companies-logo/BCDTravel-Logo2_white.png',
-    '../../../assets/images/companies-logo/expedia-Group3-white.png',
-    '../../../assets/images/companies-logo/Airbnb_Logo4_Bélo.svg.png',
-    '../../../assets/images/companies-logo/CWT-logo1-white.png',
-    '../../../assets/images/companies-logo/BCDTravel-Logo2_white.png',
-    '../../../assets/images/companies-logo/expedia-Group3-white.png',
-    '../../../assets/images/companies-logo/Airbnb_Logo4_Bélo.svg.png',
-    '../../../assets/images/companies-logo/CWT-logo1-white.png',
-    '../../../assets/images/companies-logo/BCDTravel-Logo2_white.png',
-    '../../../assets/images/companies-logo/expedia-Group3-white.png',
-    '../../../assets/images/companies-logo/Airbnb_Logo4_Bélo.svg.png'
+    'assets/images/companies-logo/CWT-logo1-white.png',
+    'assets/images/companies-logo/BCDTravel-Logo2_white.png',
+    'assets/images/companies-logo/expedia-Group3-white.png',
+    'assets/images/companies-logo/Airbnb_Logo4_Bélo.svg.png',
+    'assets/images/companies-logo/CWT-logo1-white.png',
+    'assets/images/companies-logo/BCDTravel-Logo2_white.png',
+    'assets/images/companies-logo/expedia-Group3-white.png',
+    'assets/images/companies-logo/Airbnb_Logo4_Bélo.svg.png',
+    'assets/images/companies-logo/CWT-logo1-white.png',
+    'assets/images/companies-logo/BCDTravel-Logo2_white.png',
+    'assets/images/companies-logo/expedia-Group3-white.png',
+    'assets/images/companies-logo/Airbnb_Logo4_Bélo.svg.png'
   ]
 }
