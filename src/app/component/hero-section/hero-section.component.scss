@@ -111,8 +111,9 @@
             inset-inline-start: 0;
           }
           @include respond(small) {
-            inset-block-end: -33px;
-            inset-inline-start: 52px;
+            inset-block-end: -23px;
+            inset-inline-start: 0px;
+           
           }
         }
       }

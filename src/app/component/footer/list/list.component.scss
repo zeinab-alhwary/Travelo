@@ -29,7 +29,13 @@
 }
 @include respond(medium){
   .list-container{
-    gap:25px;
+    gap:40px;
     flex-wrap: wrap;
+  }
+}
+@include respond(small){
+  .list-container{
+    gap:20px;
+    justify-content: center;
   }
 }

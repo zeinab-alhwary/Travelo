@@ -25,6 +25,7 @@ footer{
     .all-column{
     display: flex;
     justify-content: center;
+
       .contact-container{
         margin-inline-start: 70px;
        .end-culomn{
@@ -71,8 +72,11 @@ footer{
 }
 @include respond(medium){
   footer{
-    padding-inline: 30px ;
+
     .top-section{
+      flex-wrap: wrap;
+      justify-content: center;
+      text-align: center;
       .logo-info{
         margin-block-end: 30px;
         .logo{
@@ -82,16 +86,28 @@ footer{
           margin-block-start:10px;
         }
       }
-      flex-wrap: wrap;
-      justify-content: center;
-      text-align: center;
       .all-column{
         flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
        .contact-container{
-        margin-inline-start: 25px;
+        margin-inline-start: 33px;
        }
       }
     }
 
+  }
+}
+@include respond(small){
+  footer{
+    .top-section{
+      .all-column{
+       .contact-container{
+        margin-inline-start: 0;
+        margin-block-start: 20px;
+       }
+      }
+
+    }
   }
 }
